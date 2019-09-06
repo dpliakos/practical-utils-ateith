@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "practical-utils-ateith",
+  "version": "1.0.0",
+
+  "description": "Provides a list of solutions to minor problems that ATEITH students face",
+
+  "icons": {
+    "48": "./src/img/icon48x48.jpg"
+  },
+
+  "browser_action": {
+    "default_icon": "./src/img/icon48x48.jpg",
+    "default_title": "Practical utils ateith",
+    "default_popup": "./src/index.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./src/app.js"]
+    }
+  ]
+}
