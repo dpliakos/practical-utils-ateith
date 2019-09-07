@@ -15,7 +15,7 @@
   * Replaces the image with the kdiamant email with a proper url
   * 
   */
-var kdiamantEmailEeplacement = {
+var kdiamantEmailReplacement = {
   condition: function() {
     var targetUrl = "aetos.it.teithe.gr/~kdiamant";
     return window.location.toString().indexOf(targetUrl) >= 0;
@@ -34,7 +34,7 @@ var kdiamantEmailEeplacement = {
 }
 
 var listOfActions = [
-  kdiamantEmailEeplacement
+  kdiamantEmailReplacement
 ];
 
 for (var i = 0; i < listOfActions.length; i++) {
