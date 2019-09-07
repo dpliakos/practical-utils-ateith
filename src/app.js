@@ -33,17 +33,12 @@ var kdiamantEmailEeplacement = {
   }
 }
 
-
-
-
 var listOfActions = [
   kdiamantEmailEeplacement
 ];
 
 for (var i = 0; i < listOfActions.length; i++) {
-  console.debug("1")
   if (listOfActions[i].condition()) {
-    console.debug("2")
     listOfActions[i].action();
   }
 }
